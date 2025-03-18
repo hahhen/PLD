@@ -1,0 +1,14 @@
+|Aula2
+Q1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+C1 => inst4.IN0
+C1 => inst2.IN1
+C1 => inst5.IN0
+B1 => inst4.IN1
+B1 => inst2.IN0
+B1 => inst1.IN1
+B1 => inst6.IN0
+A1 => inst1.IN0
+A1 => inst5.IN1
+Q2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
