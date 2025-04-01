@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
-// DATE "04/01/2025 13:40:11"
+// DATE "04/01/2025 15:10:40"
 
 // 
 // Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -67,7 +67,7 @@ wire \~QUARTUS_CREATED_GND~I_combout ;
 wire \CF~input_o ;
 wire \CE~input_o ;
 wire \CD~input_o ;
-wire \inst4~combout ;
+wire \inst25~combout ;
 wire \inst15~0_combout ;
 
 
@@ -89,7 +89,7 @@ defparam \F~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X0_Y18_N96
 cyclonev_io_obuf \E~output (
-	.i(\inst4~combout ),
+	.i(\inst25~combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -153,33 +153,33 @@ defparam \CD~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: MLABCELL_X28_Y4_N30
-cyclonev_lcell_comb inst4(
+cyclonev_lcell_comb inst25(
 // Equation(s):
-// \inst4~combout  = ( !\CE~input_o  & ( \CD~input_o  ) )
+// \inst25~combout  = ( !\CE~input_o  & ( \CD~input_o  & ( \CF~input_o  ) ) )
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(gnd),
+	.datac(!\CF~input_o ),
 	.datad(gnd),
 	.datae(!\CE~input_o ),
 	.dataf(!\CD~input_o ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\inst4~combout ),
+	.combout(\inst25~combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam inst4.extended_lut = "off";
-defparam inst4.lut_mask = 64'h00000000FFFF0000;
-defparam inst4.shared_arith = "off";
+defparam inst25.extended_lut = "off";
+defparam inst25.lut_mask = 64'h000000000F0F0000;
+defparam inst25.shared_arith = "off";
 // synopsys translate_on
 
 // Location: MLABCELL_X28_Y4_N9
 cyclonev_lcell_comb \inst15~0 (
 // Equation(s):
-// \inst15~0_combout  = ( \CE~input_o  & ( \CD~input_o  & ( \CF~input_o  ) ) ) # ( \CE~input_o  & ( !\CD~input_o  ) ) # ( !\CE~input_o  & ( !\CD~input_o  & ( \CF~input_o  ) ) )
+// \inst15~0_combout  = ( \CE~input_o  & ( \CD~input_o  & ( \CF~input_o  ) ) ) # ( \CE~input_o  & ( !\CD~input_o  & ( \CF~input_o  ) ) ) # ( !\CE~input_o  & ( !\CD~input_o  & ( \CF~input_o  ) ) )
 
 	.dataa(!\CF~input_o ),
 	.datab(gnd),
@@ -196,11 +196,11 @@ cyclonev_lcell_comb \inst15~0 (
 	.shareout());
 // synopsys translate_off
 defparam \inst15~0 .extended_lut = "off";
-defparam \inst15~0 .lut_mask = 64'h5555FFFF00005555;
+defparam \inst15~0 .lut_mask = 64'h5555555500005555;
 defparam \inst15~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X12_Y18_N3
+// Location: LABCELL_X17_Y17_N3
 cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
 // Equation(s):
 

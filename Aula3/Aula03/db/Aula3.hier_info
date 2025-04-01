@@ -1,14 +1,16 @@
 |Aula3
 F <= inst.DB_MAX_OUTPUT_PORT_TYPE
 CF => inst.IN0
+CF => inst25.IN0
 CF => inst11.IN0
 CF => inst16.IN2
-E <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CF => inst26.IN0
+E <= inst25.DB_MAX_OUTPUT_PORT_TYPE
 CE => inst5.IN0
 CE => inst9.IN0
 CE => inst16.IN1
-CE => inst6.IN1
-CD => inst4.IN1
+CE => inst26.IN2
+CD => inst25.IN2
 CD => inst9.IN1
 CD => inst16.IN0
 CD => inst7.IN0

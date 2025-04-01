@@ -1,5 +1,5 @@
 Fitter report for Aula3
-Tue Apr  1 13:40:04 2025
+Tue Apr  1 15:10:33 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +---------------------------------+------------------------------------------------+
-; Fitter Status                   ; Successful - Tue Apr  1 13:40:04 2025          ;
+; Fitter Status                   ; Successful - Tue Apr  1 15:10:33 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; Aula3                                          ;
 ; Top-level Entity Name           ; Aula3                                          ;
@@ -196,7 +196,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/16855601/Desktop/Aula03/output_files/Aula3.pin.
+The pin-out file can be found in C:/Users/16855601/Desktop/Aula03/PLD/Aula3/Aula03/output_files/Aula3.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -266,10 +266,10 @@ The pin-out file can be found in C:/Users/16855601/Desktop/Aula03/output_files/A
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
 ; Peak interconnect usage (total/H/V)                         ; 0.1% / 0.1% / 0.2% ;       ;
-; Maximum fan-out                                             ; 2                  ;       ;
-; Highest non-global fan-out                                  ; 2                  ;       ;
-; Total fan-out                                               ; 14                 ;       ;
-; Average fan-out                                             ; 0.93               ;       ;
+; Maximum fan-out                                             ; 3                  ;       ;
+; Highest non-global fan-out                                  ; 3                  ;       ;
+; Total fan-out                                               ; 15                 ;       ;
+; Average fan-out                                             ; 1.00               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -331,7 +331,7 @@ The pin-out file can be found in C:/Users/16855601/Desktop/Aula03/output_files/A
 ;     -- Registered Output Connections                        ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; Internal Connections                                        ;                     ;                                ;
-;     -- Total Connections                                    ; 14                  ; 0                              ;
+;     -- Total Connections                                    ; 15                  ; 0                              ;
 ;     -- Registered Connections                               ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; External Connections                                        ;                     ;                                ;
@@ -366,7 +366,7 @@ The pin-out file can be found in C:/Users/16855601/Desktop/Aula03/output_files/A
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; CD   ; T13   ; 4A       ; 34           ; 0            ; 0            ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; CE   ; V13   ; 4A       ; 33           ; 0            ; 57           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; CF   ; U13   ; 4A       ; 33           ; 0            ; 40           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; CF   ; U13   ; 4A       ; 33           ; 0            ; 40           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -934,13 +934,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
 ; CF                  ;                   ;         ;
+;      - inst25       ; 0                 ; 0       ;
 ;      - inst15~0     ; 0                 ; 0       ;
 ;      - F~output     ; 0                 ; 0       ;
 ; CE                  ;                   ;         ;
-;      - inst4        ; 1                 ; 0       ;
+;      - inst25       ; 1                 ; 0       ;
 ;      - inst15~0     ; 1                 ; 0       ;
 ; CD                  ;                   ;         ;
-;      - inst4        ; 0                 ; 0       ;
+;      - inst25       ; 0                 ; 0       ;
 ;      - inst15~0     ; 0                 ; 0       ;
 +---------------------+-------------------+---------+
 
@@ -1118,23 +1119,23 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.20 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file C:/Users/16855601/Desktop/Aula03/output_files/Aula3.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/16855601/Desktop/Aula03/PLD/Aula3/Aula03/output_files/Aula3.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6615 megabytes
-    Info: Processing ended: Tue Apr  1 13:40:04 2025
+    Info: Peak virtual memory: 6618 megabytes
+    Info: Processing ended: Tue Apr  1 15:10:33 2025
     Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Total CPU time (on all processors): 00:00:10
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/16855601/Desktop/Aula03/output_files/Aula3.fit.smsg.
+The suppressed messages can be found in C:/Users/16855601/Desktop/Aula03/PLD/Aula3/Aula03/output_files/Aula3.fit.smsg.
 
 

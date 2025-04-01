@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Aula3
-Tue Apr  1 13:40:11 2025
+Tue Apr  1 15:10:40 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Apr  1 13:40:11 2025 ;
+; EDA Netlist Writer Status ; Successful - Tue Apr  1 15:10:40 2025 ;
 ; Revision Name             ; Aula3                                 ;
 ; Top-level Entity Name     ; Aula3                                 ;
 ; Family                    ; Cyclone V                             ;
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+-----------------------------+
 
 
-+-------------------------------------------------------------+
-; Simulation Generated Files                                  ;
-+-------------------------------------------------------------+
-; Generated Files                                             ;
-+-------------------------------------------------------------+
-; C:/Users/16855601/Desktop/Aula03/simulation/questa/Aula3.vo ;
-+-------------------------------------------------------------+
++------------------------------------------------------------------------------+
+; Simulation Generated Files                                                   ;
++------------------------------------------------------------------------------+
+; Generated Files                                                              ;
++------------------------------------------------------------------------------+
+; C:/Users/16855601/Desktop/Aula03/PLD/Aula3/Aula03/simulation/questa/Aula3.vo ;
++------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -81,13 +81,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Tue Apr  1 13:40:11 2025
+    Info: Processing started: Tue Apr  1 15:10:40 2025
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Aula3 -c Aula3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Aula3.vo in folder "C:/Users/16855601/Desktop/Aula03/simulation/questa/" for EDA simulation tool
+Info (204019): Generated file Aula3.vo in folder "C:/Users/16855601/Desktop/Aula03/PLD/Aula3/Aula03/simulation/questa/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4723 megabytes
-    Info: Processing ended: Tue Apr  1 13:40:11 2025
+    Info: Peak virtual memory: 4719 megabytes
+    Info: Processing ended: Tue Apr  1 15:10:40 2025
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
