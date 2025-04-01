@@ -3,8 +3,8 @@ Tabela verdade
 |                                    |
 |   F | E | D |       CF | CE | CD   |
 |   0 | 0 | 0 |        1 |  0 |  0   |
-|   0 | 0 | 1 |        1 |  1 |  0   |
-|   0 | 1 | 0 |        1 |  0 |  1   |
+|   0 | 0 | 1 |        1 |  0 |  0   |
+|   0 | 1 | 0 |        1 |  0 |  0   |
 |   0 | 1 | 1 |        1 |  0 |  0   |
 |   1 | 0 | 0 |        0 |  0 |  1   |
 |   1 | 0 | 1 |        0 |  1 |  0   |
@@ -13,11 +13,12 @@ Tabela verdade
 |                                    |
 --------------------------------------
 
-Se o sensor F não estiver acionado, o robô irá para frente, sempre.
+Se o sensor F não estiver acionado, o robô irá somente para frente, sempre.
+
+Caso contrário,
+Se somente o sensor F estiver acionado, o robô irá virar para a direita.
 Se o sensor E estiver acionado enquanto o sensor D não estiver, o robô irá virar para a direita.
 Se o sensor D estiver acionado enquanto o sensor E não estiver, o robô irá virar para a esquerda.
-Se os sensores F e E estiverem acionados, o robô irá virar para a direita.
-Se os sensores F e D estiverem acionados, o robô irá virar para a esquerda.
 Se os três sensores estiverem acionados, o robô irá virar para a direita.
 
 
